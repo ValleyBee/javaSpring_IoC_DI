@@ -2,8 +2,8 @@ package spring_introduction;
 
 import org.springframework.stereotype.Component;
 
-// @Component("catBean") // id bean = "catBean"
- @Component // id bean will be created auto with name of Class cat
+ @Component("catBean") // id bean = "catBean"
+// @Component // id bean will be created auto with name of Class cat
 public class Cat implements Pet{
     private String name;
     public Cat(){
