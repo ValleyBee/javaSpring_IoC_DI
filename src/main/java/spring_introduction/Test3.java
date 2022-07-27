@@ -1,4 +1,5 @@
 // Creating Objects by Spring constructor XML
+// getting variables from properties xml
 package spring_introduction;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
