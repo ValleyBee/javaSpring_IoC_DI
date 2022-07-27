@@ -25,7 +25,11 @@ public class Test6 {
         // DI Example III
 
         Person2 person2 = contextBean.getBean("person2Bean",Person2.class);
+        System.out.println(person2.getSurname());
+        System.out.println(person2.getAge());
+
         person2.callYourPet();
+
         contextBean.close();
 
 
