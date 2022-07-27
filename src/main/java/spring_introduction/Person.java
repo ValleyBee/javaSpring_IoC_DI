@@ -13,9 +13,9 @@ public class Person{
     @Autowired
     @Qualifier("cat")
     private Pet pet;
-    @Value("${person.surname}")  // use properties file
+    //@Value("${person.surname}")  // use properties file
     private String surname;
-     @Value("${person.age}")  // use properties file
+     //@Value("${person.age}")  // use properties file
     private int age;
 
 
