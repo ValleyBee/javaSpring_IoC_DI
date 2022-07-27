@@ -22,10 +22,11 @@
 
     <bean id="myPerson"
           class="spring_introduction.Person">  <!-- Person myPerson = new Person(); -->
-        <!--    create object by constructor
+
+        <!--  DI  create object by constructor
          <constructor-arg ref="myPet2"/> -->
         <property name="pet" ref="myPet2"/> <!--  name "pet" > converts to setPet, myPerson.setPet(myPet); -->
-        <property name="surname" value="${person.surname}"/>
+        <property name="surname" value="${person.surname}"/>  <!-- variables from myApp.properties  -->
         <property name="age" value="${person.age}"/>
 
     </bean>
