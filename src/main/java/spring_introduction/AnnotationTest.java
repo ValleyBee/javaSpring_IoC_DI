@@ -1,4 +1,5 @@
 // Creating Objects by Spring annotation XML applicationContext_annotation.xml
+// DI - Autowire by injection to main code of constructor,setter(any methods),field
 package spring_introduction;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
