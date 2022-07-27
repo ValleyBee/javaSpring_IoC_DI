@@ -9,18 +9,18 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component("personBean")
-public class Person{
+public class Person {
     @Autowired
     @Qualifier("cat")
     private Pet pet;
     //@Value("${person.surname}")  // use properties file
     private String surname;
-     //@Value("${person.age}")  // use properties file
+    //@Value("${person.age}")  // use properties file
     private int age;
 
 
-@Autowired
-@Qualifier("dog")
+    @Autowired
+    @Qualifier("dog")
     public void setPet(Pet pet) {
         System.out.println("Class Person: setter pet");
         this.pet = pet;
@@ -34,7 +34,8 @@ public class Person{
     public void setAge(int age) {
         this.age = age;
     }
-// GETTERS
+
+    // GETTERS
     public String getSurname() {
         return surname;
     }
@@ -43,7 +44,7 @@ public class Person{
         return age;
     }
 
-@Autowired
+    @Autowired
     public Person(@Qualifier("cat") Pet pet) {
         System.out.println("Person bean is created");
         this.pet = pet;
