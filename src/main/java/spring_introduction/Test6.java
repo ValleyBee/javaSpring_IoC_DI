@@ -1,4 +1,5 @@
-// DI Configuration by Class ConfigAnnotation
+// DI Configuration by annotation in Class ConfigAnnotation instead of XML file
+// Example I
 package spring_introduction;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
