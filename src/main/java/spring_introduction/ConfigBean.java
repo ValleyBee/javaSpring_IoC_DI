@@ -11,5 +11,10 @@ public class ConfigBean {
 @Scope("singleton")
     public Pet hamsterBean(){   // bean id is name of method
         return new Hamster();
-    }
+     }
+
+     @Bean
+     public Person2 person2Bean(){
+    return new Person2(hamsterBean());
+     }
 }
