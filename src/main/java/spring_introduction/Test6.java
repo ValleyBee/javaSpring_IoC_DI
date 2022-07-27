@@ -21,6 +21,12 @@ public class Test6 {
 
          Pet pet = contextBean.getBean("hamsterBean",Hamster.class);
          pet.say();
+       // System.out.println("__________________");
+        // DI Example III
+
+        Person2 person2 = contextBean.getBean("person2Bean",Person2.class);
+        person2.callYourPet();
+        contextBean.close();
 
 
 

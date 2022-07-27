@@ -8,6 +8,9 @@ public class Person2 {
         System.out.println("Person2 bean is created");
         this.pet = pet;
     }
+//    Person2(){
+//        System.out.println("Person bean is created: Default constructor");
+//        }
 
     // SETTERS
     public void setSurname(String surname) {
@@ -27,7 +30,7 @@ public class Person2 {
     }
 
     public void callYourPet() {
-        System.out.println("Hello my lovely pet");
+        System.out.println("Person 2: Hello my lovely pet");
         pet.say();
     }
 }
