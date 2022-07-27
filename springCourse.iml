@@ -24,5 +24,6 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-context:5.3.22" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.3.22" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.3.22" level="project" />
+    <orderEntry type="library" name="Spring-5.2.3.RELEASE" level="project" />
   </component>
 </module>
