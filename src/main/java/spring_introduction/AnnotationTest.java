@@ -1,5 +1,5 @@
 // Creating Objects by Spring annotation XML applicationContext_annotation.xml
-// DI - Autowire by injection to main code of constructor,setter(any methods),field
+
 package spring_introduction;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -17,6 +17,12 @@ public class AnnotationTest {
         // example Autowire
         Person person = context.getBean("personBean", Person.class);
         person.callYourPet();
+        System.out.println("__________________");
+//      DI @Value
+        System.out.println(person.getSurname());
+        System.out.println(person.getAge());
+
+
         context.close();
 
     }
