@@ -1,16 +1,22 @@
+// @Autowired @Qualifier("dog")  use when more one @Component marked
+//
+
 package spring_introduction;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("personBean")
 public class Person{
     @Autowired
+    @Qualifier("cat")
     private Pet pet;
     private String surname;
     private int age;
 
-
+@Autowired
+@Qualifier("dog")
     public void setPet(Pet pet) {
         System.out.println("Class Person: setter pet");
         this.pet = pet;
@@ -33,10 +39,11 @@ public class Person{
         return age;
     }
 
-    @Autowired
-    public Person(Pet pet) {
+@Autowired
+    public Person(@Qualifier("cat") Pet pet) {
         System.out.println("Person bean is created");
         this.pet = pet;
+
     }
 
     public Person() {

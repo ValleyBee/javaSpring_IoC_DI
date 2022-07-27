@@ -15,7 +15,7 @@ public class AnnotationTest {
 //        myCat.say();
 
         // example Autowire
-        Person person = context.getBean("person", Person.class);
+        Person person = context.getBean("personBean", Person.class);
         person.callYourPet();
         context.close();
 
